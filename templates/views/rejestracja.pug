@@ -1,0 +1,10 @@
+include ../layouts/default
+content
+	.container: .jumbotron
+		h1 Rejestracja
+		form(action='/api/newuser', method='POST')
+			input(type='text' name='first' placeholder='Imię')
+			input(type='text' name='last' placeholder='Nazwisko')
+			input(type='text' name='login' placeholder='Login')
+			input(type='password' name='pass' placeholder='Hasło')
+			input(type='submit' value='Zarejestruj się')

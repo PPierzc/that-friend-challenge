@@ -1,0 +1,14 @@
+include ../layouts/default
+content
+	.container: .jumbotron
+		h1= name.first + ' ' + name.last
+		h3 Twoi Przyjaciele
+		each friend in friends
+			a(onclick="removeFriend('" + friend._id + "')")
+				p= friend.name.first + ' ' + friend.name.last
+		button#btn(onclick="requestUsers()")
+			| Dodaj
+		a(href='/api/logout')
+			button
+				| Wyloguj
+		#add

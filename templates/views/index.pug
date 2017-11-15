@@ -1,0 +1,10 @@
+include ../layouts/default
+content
+	.container: .jumbotron
+		h1 That Friend
+		form(action='/api/auth', method='POST')
+			input(type='text' name='login' placeholder='Login')
+			input(type='password' name='pass' placeholder='Hasło')
+			input(type='submit' value='Zaloguj się')
+		a(href='/rejestracja') Zarejestruj się
+		
