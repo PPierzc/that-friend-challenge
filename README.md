@@ -7,3 +7,6 @@ A simple app infiltration challenge.
 The language of the solution is completely upto you.
 
 Have fun!
+
+*WARNING* A solution in Python has been provided under /solutions/python/solve.py
+Reading the solution will ruin the fun of this challenge, however if you want to compare answers or have no idea at all how to solve the challenge, then you are welcome to check it out :)
